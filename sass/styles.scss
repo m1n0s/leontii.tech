@@ -1,0 +1,14 @@
+$mainColor: red;
+
+body {
+  background: $mainColor;
+  color: #000;
+}
+
+h1 {
+  color: $mainColor;
+}
+
+h2 {
+  background-color: #fff;
+}
