@@ -2,9 +2,333 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>Leontii</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+<header id="header" class="header">
+    <div class="header__wrap">
+        <div class="container">
+            <div class="row">
+                <h1 class="header__name col-xs-12">
+                    Leontii Hrabovetskiy
+                </h1>
+                <div class="header__who">
+                    front-end developer<br>
+                    lovely husband<br>
+                    football ultras<br>
+                    geek<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav id="main-nav" class="main-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Resume</a></li>
+                    <li><a href="#no-portfolio">Portfolio</a></li>
+                    <li><a href="#hire">Hire me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <h2 class="about__heading heading">
+                About me
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">
+                <div class="about__card">
+                    <div class="card__me">
+                        <img src="img/leo.jpg" alt="L.Hrabovetskyi" class="img img-responsive">
+                    </div>
+                    <div class="card__info">
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd>Leontii Hrabovetskyi</dd>
+                            <dt>Date of birth:</dt>
+                            <dd>29 July 1992</dd>
+                            <dt>Address:</dt>
+                            <dd>Kyiv, Ukraine</dd>
+                            <dt>Nationality:</dt>
+                            <dd>Ukrainian</dd>
+                            <dt>Phone:</dt>
+                            <dd><a href="tel:+380950380384">+38(095)038-03-84</a></dd>
+                            <dt>E-mail:</dt>
+                            <dd><a href="mailto:l.hrabovetskyi@gmail.com">l.hrabovetskyi@gmail.com</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4">
+                <div class="about__short-info">
+                    <h3 class="short-info__heading">My goal</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="about__short-info">
+                    <h3 class="short-info__heading">What I do?</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <ul class="check-list">
+                        <li>skill-1</li>
+                        <li>skill-2</li>
+                        <li>skill-3</li>
+                        <li>skill-4</li>
+                        <li>skill-5</li>
+                        <li>skill-6</li>
+                    </ul>
+                </div>
+                <div class="about__action-btns">
+                    <a href="#contact" class="main-btn contact-btn">Contact me</a>
+                    <a href="#" class="main-btn download-btn">Download my CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="row">
+            <h2 class="skills__heading heading">
+                I'm good at
+            </h2>
+        </div>
+        <div class="row">
+            <h3 class="skills__sub-heading">
+                Now
+            </h3>
+            <div class="col-md-12">
+                <ul>
+                    <li>HTML5 + CSS3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Twitter Bootstrap</li>
+                    <li>Responsive Web Design</li>
+                    <li>Cross-browser compability</li>
+                    <li>API/AJAX</li>
+                    <li>Wordpress</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="skills__sub-heading">
+                Soon
+            </h3>
+            <div class="col-md-12">
+                <ul>
+                    <li>AngularJS</li>
+                    <li>Git</li>
+                    <li>Sass/Less</li>
+                    <li>SQL</li>
+                    <li>Back-end</li>
+                    <li>much more</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="row">
+            <h2 class="experience__heading heading">
+                Resume
+            </h2>
+
+            <div class="col-md-12">
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="img/cd-icon-picture.svg" alt="Picture">
+                        </div>
+                        <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 1</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+                                rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste
+                                voluptatibus minus veritatis qui ut.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Jan 14</span>
+                        </div>
+                        <!-- cd-timeline-content -->
+                    </div>
+                    <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                            <img src="img/cd-icon-movie.svg" alt="Movie">
+                        </div>
+                        <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 2</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+                                rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Jan 18</span>
+                        </div>
+                        <!-- cd-timeline-content -->
+                    </div>
+                    <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="img/cd-icon-picture.svg" alt="Picture">
+                        </div>
+                        <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 3</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam
+                                id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit
+                                similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque,
+                                deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus
+                                quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod
+                                veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt
+                                similique aut adipisci.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Jan 24</span>
+                        </div>
+                        <!-- cd-timeline-content -->
+                    </div>
+                    <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                            <img src="img/cd-icon-location.svg" alt="Location">
+                        </div>
+                        <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 4</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+                                rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste
+                                voluptatibus minus veritatis qui ut.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Feb 14</span>
+                        </div>
+                        <!-- cd-timeline-content -->
+                    </div>
+                    <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                            <img src="img/cd-icon-location.svg" alt="Location">
+                        </div>
+                        <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 5</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+                                rerum.</p>
+                            <a href="#0" class="cd-read-more">Read more</a>
+                            <span class="cd-date">Feb 18</span>
+                        </div>
+                        <!-- cd-timeline-content -->
+                    </div>
+                    <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                            <img src="img/cd-icon-movie.svg" alt="Movie">
+                        </div>
+                        <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <h2>Final Section</h2>
+
+                            <p>This is the content of the last section</p>
+                            <span class="cd-date">Feb 26</span>
+                        </div>
+                        <!-- cd-timeline-content -->
+                    </div>
+                    <!-- cd-timeline-block -->
+                </section>
+                <!-- cd-timeline -->
+            </div>
+        </div>
+    </div>
+</section>
+<section id="no-portfolio" class="no-portfolio">
+    <div class="container">
+        <div class="row">
+            <h2 class="no-portfolio__heading heading">
+                Portfolio
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                no-portfolio text
+            </div>
+        </div>
+    </div>
+</section>
+<section id="hire" class="hire">
+    <div class="container">
+        <div class="row">
+            <h2 class="hire__heading heading">
+                Hire me
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                you can navigate me now
+            </div>
+        </div>
+    </div>
+</section>
+<section id="map" class="map">
+    <div class="container">
+        <div class="row">
+            <h2 class="hire__heading heading">
+                Catch me by Google Map
+            </h2>
+        </div>
+    </div>
+    google map here -- full width
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <h2 class="contact__heading heading">
+                get in touch
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                Contact form
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">copyright</div>
+        </div>
+    </div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
