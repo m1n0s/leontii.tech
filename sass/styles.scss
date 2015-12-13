@@ -314,12 +314,27 @@ xrotate
 .card__me {
   -webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
-  @include transition(all .2s linear);
+  @include transition(.2s);
+  overflow: hidden;
+}
+
+.card__me img {
+  position: relative;
+  left: 0;
+  max-width: 110%;
+  width:110%;
+  @include transition(.2s);
+}
+
+.about__card:hover .card__me img {
+  left: -10%;
 }
 
 .about__card:hover .card__me {
-  -webkit-clip-path: polygon(50% 0, 100% 40%, 75% 100%, 25% 100%, 0 40%);
-  clip-path: polygon(50% 0, 100% 40%, 75% 100%, 25% 100%, 0 40%);
+  //-webkit-clip-path: polygon(50% 0, 100% 40%, 75% 100%, 25% 100%, 0 40%);
+  //clip-path: polygon(50% 0, 100% 40%, 75% 100%, 25% 100%, 0 40%);
+  -webkit-clip-path: polygon(25% 0, 75% 0%, 100% 33.3%, 50% 100%, 0 33.3%);
+  clip-path: polygon(25% 0, 75% 0%, 100% 33.3%, 50% 100%, 0 33.3%);
 }
 
 .card__info dt {
@@ -357,6 +372,40 @@ xrotate
 
 .card__info dd .stripe.yellow {
   background: #ffd500;
+}
+
+
+/* I'M GOOD AT */
+
+/* NOW */
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.percent {
+  display: inline-block;
+  margin: auto;
+  line-height: 140px;
+  z-index: 2;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.percent:after {
+  content: '%';
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 

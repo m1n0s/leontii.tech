@@ -4,26 +4,26 @@
 
 (function($) {
 
-    var geoLocationString = '',
-        weatherString = '';
-
-    $.getJSON('http://jsonip.com?callback=?', function(ip) {
-
-        $.getJSON('http://api.sypexgeo.net/uyGvR/json/' + ip.ip, function(geo) {
-
-            geoLocationString = geo.city.name_en + ', ' + geo.country.name_en;
-
-            $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + geo.city.name_en + '&units=metric&APPID=3c4d9e2d7cdf621a935a828feb83662e', function(weather) {
-
-                weatherString = weather.weather[0].description + ' and ' + weather.main.temp + ' Celsius';
-
-                $('#geo-city-country').text(geoLocationString);
-                $('#weather-descr').text(weatherString);
-
-                //OFF PRELOAD
-            });
-        });
-    });
+    //var geoLocationString = '',
+    //    weatherString = '';
+    //
+    //$.getJSON('http://jsonip.com?callback=?', function(ip) {
+    //
+    //    $.getJSON('http://api.sypexgeo.net/uyGvR/json/' + ip.ip, function(geo) {
+    //
+    //        geoLocationString = geo.city.name_en + ', ' + geo.country.name_en;
+    //
+    //        $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + geo.city.name_en + '&units=metric&APPID=3c4d9e2d7cdf621a935a828feb83662e', function(weather) {
+    //
+    //            weatherString = weather.weather[0].description + ' and ' + weather.main.temp + ' Celsius';
+    //
+    //            $('#geo-city-country').text(geoLocationString);
+    //            $('#weather-descr').text(weatherString);
+    //
+    //            //OFF PRELOAD
+    //        });
+    //    });
+    //});
 
     $(document).ready(function() {
 
@@ -65,6 +65,47 @@
                 ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-img').hasClass('is-hidden')) && $(this).find('.timeline-img, .timeline-content').removeClass('is-hidden').addClass('bounce-in');
             });
         }
+
+
+
+
+        // -------------------------------------------------------------
+        // Progress Bar
+        // -------------------------------------------------------------
+
+        $('.skill-progress').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+            if (visible) {
+                $.each($('div.progress-bar'),function(){
+                    $(this).css('width', $(this).attr('aria-valuenow')+'%');
+                });
+                $(this).unbind('inview');
+            }
+        });
+
+        // -------------------------------------------------------------
+        // More skill
+        // -------------------------------------------------------------
+        $('.good-now-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+            if (visible) {
+                $('.chart').easyPieChart({
+                    //your configuration goes here
+                    easing: 'easeOut',
+                    delay: 3000,
+                    barColor:'#68c3a3',
+                    trackColor:'rgba(255,255,255,0.2)',
+                    scaleColor: false,
+                    lineWidth: 8,
+                    size: 140,
+                    animate: 2000,
+                    onStep: function(from, to, percent) {
+                        this.el.children[0].innerHTML = Math.round(percent);
+                    }
+
+                });
+                $(this).unbind('inview');
+            }
+        });
+
 
 
 
