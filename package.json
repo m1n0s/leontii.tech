@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "fullpage.js": "^2.7.6",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.0",
     "gulp-watch": "^4.3.5",
