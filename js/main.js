@@ -238,13 +238,19 @@
             windowWH();
         }
 
+        var btn = document.querySelectorAll('.hire-now-btn')[0];
 
         document.querySelectorAll("#hire")[0].onmousemove = function(event){
 
             event = event || window.event; // IE-ism
 
+
+
             relX = event.pageX - centerW;
             relY = centerH - event.pageY;
+
+            btn.style['top'] = Math.floor(event.pageY - btn.offsetHeight/2) + 'px';
+            btn.style['left'] = Math.floor(event.pageX - btn.offsetWidth/2) + 'px';
 
             sectorFound(relX, relY);
 
@@ -304,9 +310,6 @@
             }
 
             document.querySelectorAll(".head-rotate")[0].style['top'] = -(sector-1) * 450 + 'px';
-
-
-
 
         }
 
