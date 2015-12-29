@@ -230,7 +230,7 @@
             relX = 0,
             relY = 0;
 
-        var zeroVector = [2, 1];
+        var zeroVector = [5, 2];
 
         windowWH();
 
@@ -239,6 +239,7 @@
         }
 
         var btn = document.querySelectorAll('.hire-now-btn')[0];
+
 
         document.querySelectorAll("#hire")[0].onmousemove = function(event){
 

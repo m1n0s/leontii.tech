@@ -474,6 +474,24 @@ xrotate
   cursor: pointer;
   z-index: 10; }
 
+.hire .line {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 100;
+  height: 1px;
+  width: 400px;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left; }
+
+.hire .line.sector {
+  width: 1000px; }
+
 /* GET IN TOUCH */
 .form-group {
   position: relative; }
@@ -541,6 +559,18 @@ input::-moz-focus-inner {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-skype:before {
+  content: "\e90d"; }
+
+.icon-github:before {
+  content: "\e90a"; }
+
+.icon-facebook:before {
+  content: "\e90b"; }
+
+.icon-linkedin:before {
+  content: "\e90c"; }
 
 .icon-graduate:before {
   content: "\e907"; }
