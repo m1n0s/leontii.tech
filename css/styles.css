@@ -13,7 +13,7 @@ dl {
 /* MAIN STYLES */
 .heading {
   font-size: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase; }
 
@@ -467,7 +467,7 @@ xrotate
   top: 0;
   left: 0;
   padding: 15px 20px;
-  background: red;
+  background: #333;
   color: #fff;
   font-weight: bold;
   white-space: nowrap;
@@ -493,26 +493,85 @@ xrotate
   width: 1000px; }
 
 /* GET IN TOUCH */
+.social-touch {
+  text-align: center; }
+
+.social-link-icon {
+  padding: 5px;
+  margin: 1em;
+  display: inline-block; }
+  .social-link-icon:hover, .social-link-icon:focus {
+    text-decoration: none; }
+    .social-link-icon:hover .icon, .social-link-icon:focus .icon {
+      -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -ms-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s; }
+    .social-link-icon:hover .icon-github, .social-link-icon:focus .icon-github {
+      color: #4078c0; }
+    .social-link-icon:hover .icon-facebook, .social-link-icon:focus .icon-facebook {
+      color: #3b5998; }
+    .social-link-icon:hover .icon-skype, .social-link-icon:focus .icon-skype {
+      color: #12A5F4; }
+    .social-link-icon:hover .icon-linkedin, .social-link-icon:focus .icon-linkedin {
+      color: #0077B5; }
+
+.social-touch .icon {
+  font-size: 3em;
+  color: #333;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s; }
+
+.divider {
+  font-size: 2em;
+  text-align: center; }
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto; }
+
 .form-group {
   position: relative; }
 
 .form-group input {
-  -webkit-transition: .1s all linear;
-  transition: .1s all linear;
-  padding-top: 20px; }
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding-top: 20px;
+  height: 2.5em;
+  font-size: 1.5em;
+  border-radius: 0; }
 
 .form-group textarea {
-  -webkit-transition: .1s all linear;
-  transition: .1s all linear;
-  padding-top: 20px; }
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding-top: 20px;
+  font-size: 1.5em;
+  resize: none; }
 
 .form-group label {
   position: absolute;
   top: 16px;
   left: 15px;
-  color: #000;
-  -webkit-transition: .1s all linear;
-  transition: .1s all linear;
+  color: #333;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   cursor: text; }
 
 .form-group.active input {
@@ -521,7 +580,8 @@ xrotate
 .form-group.active label {
   top: 2px;
   font-size: 11px;
-  opacity: .7; }
+  opacity: .7;
+  background-color: #fff; }
 
 .form-group.active label em {
   display: none; }
@@ -530,6 +590,23 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
+.rate-form {
+  text-align: center; }
+
+.stars .icon {
+  color: #333;
+  margin: .5em .2em;
+  font-size: 3em;
+  display: inline-block;
+  cursor: pointer; }
+
+.footer-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 50%;
+  text-align: center; }
 
 /* GOOGLE MAP */
 .map-wrap {
@@ -559,6 +636,12 @@ input::-moz-focus-inner {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-star-empty:before {
+  content: "\e90e"; }
+
+.icon-star-full:before {
+  content: "\e90f"; }
 
 .icon-skype:before {
   content: "\e90d"; }
