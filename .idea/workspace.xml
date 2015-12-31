@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd24a7c2-b684-44d9-a3c0-109da2d0a9a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/css/fonts/icomoon.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/css/fonts/icomoon.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/css/fonts/icomoon.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/css/fonts/icomoon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/styles.scss" afterPath="$PROJECT_DIR$/sass/styles.scss" />
-    </list>
+    <list default="true" id="fd24a7c2-b684-44d9-a3c0-109da2d0a9a8" name="Default" comment="" />
     <ignored path="leontii.tech.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +36,8 @@
       <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71889955">
-              <caret line="714" column="21" selection-start-line="714" selection-start-column="21" selection-end-line="714" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.2715311">
+              <caret line="692" column="25" selection-start-line="692" selection-start-column="25" selection-end-line="692" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -378,9 +369,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20511483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="760" y="44" width="400" height="952" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20511483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="760" y="44" width="400" height="952" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -864,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71889955">
-          <caret line="714" column="21" selection-start-line="714" selection-start-column="21" selection-end-line="714" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.2715311">
+          <caret line="692" column="25" selection-start-line="692" selection-start-column="25" selection-end-line="692" selection-end-column="25" />
           <folding />
         </state>
       </provider>
