@@ -318,6 +318,30 @@
 
 
 
+        /* Stars */
+
+        var stars = $('.stars .icon');
+
+        stars.on('click', function(){
+
+                stars.removeClass('rate-star').removeClass('icon-star-full').addClass('icon-star-empty');
+
+                $(this).addClass('rate-star');
+
+                stars.each(function(){
+
+                    $(this).addClass('icon-star-full').removeClass('icon-star-empty');
+
+                    if ($(this).hasClass('rate-star')) {
+                        return false;
+                    }
+
+                });
+
+            });
+
+
+
 
 
 
